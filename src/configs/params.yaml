@@ -1,0 +1,28 @@
+# 去烟参数
+dehazing:
+  omega: 0.95
+  t0: 0.1
+  window_size: 15
+  bilateral:
+    d: 9
+    sigma_color: 75
+    sigma_space: 75
+
+# 融合参数
+fusion:
+  filter_radius: 10
+  eps: 1e-6
+  saliency_threshold: 0.5
+
+# YOLO参数
+yolo:
+  model_path: "models/yolov12n.pt"
+  img_size: 320
+  conf_thres: 0.6
+  classes: [0]  # 0对应person类别
+
+# 硬件参数
+hardware:
+  frame_width: 640
+  frame_height: 480
+  target_fps: 30
